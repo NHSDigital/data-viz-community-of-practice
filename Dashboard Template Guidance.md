@@ -1,74 +1,32 @@
-# Dashboard Template Guidance Document
+# __Dashboard Template Guidance Document__
+
+![image](images/images.PNG)
 
 [__1\. Introduction__ ](#1-introduction)  
 [__2\. Desktop Scaling Issues \(Tableau Desktop Only\)__ ](#2-desktop-scaling-issues-tableau-desktop-only)  
-[__3\. How to use Templates \(Tableau Desktop Only\)__](#3-how-to-use-templates-tableau-desktop-only)
+[__3\. How to use Templates \(Tableau Desktop Only\)__](#3-how-to-use-templates-tableau-desktop-only)<br>
+[__4\. Text Formatting__](#4-text-formatting)<br>
+[__5\. Dashboard Sizing__](#5-dashboard-sizing)<br>
+[__6\. Charts__](#6-charts)<br>
+[__7\. Maps__](#7-maps)<br>
+[__8\. Header Design__](#8-header-design)<br>
+[__9\. Buttons__](#9-buttons)<br>
+[__10\. Tables__](#10-tables)<br>
+[__11\. Filters__](#11-filters)<br>
+[__12\. Icons__](#12-icons)<br>
+[__13\. General Padding and Formatting of Objects__](#13-general-padding-and-formatting-of-objects)<br>
+[__14\. Accessibility__](#14-accessibility)<br>
+[__15\. What Chart Should Be Used When?__](#15-what-chart-should-be-used-when)<br>
+[__16\. Summary Key Links__](#16-summary-key-links)<br>
 
-- [Downloading and using templates](#downloading-and-using-templates)
-- [Custom Colour Palettes](#custom-colour-palettes)
-- [Custom Colours](#custom-colours)
 
-[__4\. Text Formatting__](#4-text-formatting)
-
-- [Text Styling](#text-styling)
-- [Text Colours](#text-colours)
-
-[__5\. Dashboard Sizing__](#5-dashboard-sizing)
-
-- [Page Width and Height](#page-width-and-height)
-- [Tablet / Mobile Designs](#tablet-mobile-designs)
-
-[__6\. Charts__](#6-charts)
-
-- [Chart Colours](#chart-colours)
-- [Chart Tooltips](#chart-tooltips)
-- [Text Alignment](#text-alignment)
-- [Chart Dividers](#chart-dividers)
-
-[__7\. Maps__](#7-maps)
-
-- [Map Colours](#map-colours)
-- [Map Labels](#map-labels)
-- [Filters and Reset Map](#filters-and-reset-map)
-
-[__8\. Header Design__](#8-header-design)
-
-- [NHS Logo](#nhs-logo)
-- [Title, Description and Latest Release](#title-description-and-latest-release)
-- [Date Last Refreshed](#date-last-refreshed)
-
-[__9\. Buttons__](#9-buttons)
-
-[__10\. Tables__](#10-tables)
-
-[__11\. Filters__](#11-filters)
-
-[__12\. Icons__](#12-icons)
-
-[__13\. General Padding and Formatting of Objects__](#13-general-padding-and-formatting-of-objects)
-
-- [NHS Digital Header](#nhs-digital-header)
-- [Headlines](#headlines)
-- [Filter Bar](#filter-bar)
-- [Navigation Buttons](#navigation-buttons)
-- [Charts](#charts)
-- [Maps](#maps)
-- [Text Page](#text-page)
-
-[__14\. Accessibility__](#14-accessibility)
-
-[__15\. What Chart Should Be Used When?__](#15-what-chart-should-be-used-when)
-
-- [Bar Charts](#bar-charts)
-- [Gauge / Donut Charts](#gauge-donut-charts)
-- [Line Charts](#line-charts)
 
 # ____1\. Introduction____
-The purpose of this document is to provide supporting guidance for the style and formatting of NHS Digital dashboards plus to provide links to a set of template Tableau workbooks which have been created in line with the guidance provided\. The aim of these templates is to save development time per dashboard, share good practice and increase consistency of look and feel across NHS Digital dashboards\. Although this guide is written with examples from Tableau, most of all these ideas and principles can be used on other visualisation software including Microsoft PowerBI\.   
+The purpose of this document is to provide supporting guidance for the style and formatting of NHS Digital dashboards plus to provide links to a set of template Tableau workbooks which have been created in line with the guidance provided\. The aim of these templates is to save development time per dashboard, share good practice and increase consistency of look and feel across NHS Digital dashboards\. Although this guide is written with examples from Tableau, most of all these ideas and principles can be used on other visualisation software including Microsoft PowerBI\. 
 
-![image](images/figure1.PNG)
-<figcaption>Figure 1 - Tableau Template Screenshots</figcaption>
-<br>
+
+[Click here to view a demo of these dashboards](https://public.dashboards.data.digital.nhs.uk/#/views/NHSD_Templates_Complete/1_NavButtons)\.
+
 
 # ____2\. Desktop Scaling Issues \(Tableau Desktop Only\)____
 
@@ -83,19 +41,17 @@ Here are the instructions to ensure your Tableau Desktop is scaling correctly:
 5. Open up the Tableau Workbook
 6. Once this is open you can change your scaling to the previous sizing during this work session\. If you need to reopen a workbook repeat the above steps
 
-There is also a video recording of how to do this [here](https://hscic365-my.sharepoint.com/:v:/g/personal/daha24_hscic_gov_uk/ESJ6oE1xE45CjoUW1F1qJ2wBmPXRlbr0MmX2jDW5HwWTVQ)\.  
-
 ![image](images/figure2.PNG)
-<figcaption>Figure 2 - Setting screenshots</figcaption>
 <br>
 
 # ____3\. How to use Templates \(Tableau Desktop Only\)____
 
-Ensure you have read section 2 above before commencing and familiarise yourselves with the populated templates [here](./files/NHSD_Templates_Complete_v9.twbx)\.
+Ensure you have read section 2 above before commencing and familiarise yourselves with the populated templates either [online](https://public.dashboards.data.digital.nhs.uk/#/views/NHSD_Templates_Complete/1_NavButtons) or [download here](./files/NHSD_Templates_Complete_v12.twbx)\.
 
-#### Downloading and using templates
+## __Downloading and using templates for use on Tableau Server__
 
-Download the blank templates from [here](./files/NHSD_Templates_Empty_v9.twbx) and follow either Option 1 or Option 2 depending on your use case\.   
+Download the blank templates from [here](./files/NHSD_Templates_Empty_v12.twbx) and follow either Option 1 or Option 2 depending on your use case\. Note these templates include phone and tablet views which can be turned on or off depending on requirements. If these views are turned on the dashboard will open in phone and tablet friendly views for users and can also be opened via the [Tableau App](https://www.tableau.com/en-gb/products/mobile). 
+
 __Option 1__ \- recommended if starting a new dashboard
 
 - Replace the dummy data source with new data source
@@ -106,26 +62,37 @@ __Option 1__ \- recommended if starting a new dashboard
 	- Remember to update the tooltip with relevant text and duplicate the information icons for any additional tooltips on the pages\.
 	- Note if the "I"s don't appear correctly head to Section 12: Information Icons
 - Add own visuals to dashboards in place of the dummy placeholders
+- Check tablet and phone views before publishing to server
 
   
 __Option 2__ \- recommended if building on existing dashboard
 
 - Copy and paste individual tabs from the template into your existing dashboard and use this to help update your existing dashboard
+- Check tablet and phone views before publishing to server
 
+## __Downloading and using templates for use within NHS Digital webpages (Desktop, Tablet, Phone and App)__
+
+To use these templates within the NHS Digital webpages, follow Option 1 or Option 2 above and do the following:
+
+- Reduce the width of each page from 1262px to 1220px (to ensure dashboard is not cropped due to the website margins)
+- Reduce the Outer Padding and Inner Padding of the entire page container to 0.
+- Check tablet and phone views before publishing to server
+- Generate a "Share" link from server and paste this into the Tableau Specific NHS Digital Webpage Module.
+- Choose how you would like the dashboard to appear (desktop only, tablet only, phone only, auto choose between all 3 or auto choose between desktop and phone only)
   
 Contact David Hardy \([David\.Hardy5@nhs\.net](mailto:David.Hardy5@nhs.net)\) for any further advice
 
-#### Custom Colour Palettes
+## __Custom Colour Palettes__
 
 Having the NHS Digital default colours for charts can save time and this can be achieved by having the colour palette installed in 'My Tableau Repository' on your system:
 
 - Download this custom "Preferences\.tps" from [here](./files/Preferences.tps)\.
 - Replace your "Preferences\.tps" file in your 'My Tableau Repository' which can be found by clicking File > Repository Location
-- The NHS Digital Colour Palette should now appear when using a discrete dimension such as regions
+- A number of NHS and NHS Digital specific colour palettes should now appear when using a discrete dimension (e.g regions)
 
 ![image](images/figure2a.PNG)
 
-#### Custom Colours
+## __Custom Colours__
 
 This method shows how to save colours used often in the dashboard to avoid having to add the hex code each time
 
@@ -133,10 +100,10 @@ This method shows how to save colours used often in the dashboard to avoid havin
 - Select something to colour such as the background
 - Head to more colours
 - Select a blank box in the custom colours and paste in the following key colours
-- Grey \(\#666666\)
-- Emergency Services Red \(\#DA291C\)
 - NHS Blue \(\#005EB8\)
+- Chart Blue 1 \(\#003087\)
 - Secondary/Highlight colour: NHS Orange \(\#ED8B00\)
+- Emergency Services Red \(\#DA291C\)
 - Background Colour behind filters and other objects: Grey \(\#f5f5f5\)
 
 ![image](images/figure2b.PNG)
@@ -146,7 +113,7 @@ This method shows how to save colours used often in the dashboard to avoid havin
 
 Text formatting across the dashboard should be consistent\. Smaller font sizes can cause accessibility issues\. The standard font used is Arial and a variety of sizes are used depending on the feature of the dashboard\.
 
-#### Text Styling
+## __Text Styling__
 
 - Font: Arial
 - Headings: Size: 12pt , Type: Bold, Colour: Black
@@ -157,25 +124,26 @@ Text formatting across the dashboard should be consistent\. Smaller font sizes c
 - Tables, Size 10pt, Type Standard, Colour: Black
 
 ![image](images/figure3.PNG)
-<figcaption>Figure 3 - Heading, sub heading and general text example</figcaption>
+<figcaption>Heading, sub heading and general text example</figcaption>
 <br>
 
-#### Text Colours
+## __Text Colours__
 
 - Primary colour: Black
 - Secondary colour: Grey \(\#666666\)
 - Highlight colour: Emergency Services Red \(\#DA291C\)
 
 Be aware using green/red together as these are not suitable for those who are colour blind\. See [NHS guidance](https://www.england.nhs.uk/nhsidentity/identity-guidelines/colours/) for more information on colours\.   
+
 ![image](images/figure4.PNG)
-<figcaption>Figure 4 - Header example using Primary, Secondary and Highlight Colours</figcaption>
+<figcaption>Header example using Primary, Secondary and Highlight Colours</figcaption>
 <br>
 
 # ____5\. Dashboard Sizing____
 
-Dashboard sizing is important to ensure all users see the same layout of the dashboard as designed\. This guidance document has been written with a focus on Desktop views only\. Tablet and Mobile templates for web dashboards will be updated at a future
+Dashboard sizing is important to ensure all users see the same layout of the dashboard as designed\.
 
-#### Page Width and Height
+## __Page Width and Height for for use on Tableau Server__
 
 - Use "Fixed Size" to ensure page looks the same across all devices\. This also has performance benefits vs "Automatic"\.
 - Width fixed to 1,262px, this allows users of the majority of popular screen sizes to see the full width of a dashboard without horizontal scrolling
@@ -183,18 +151,21 @@ Dashboard sizing is important to ensure all users see the same layout of the das
 
   
 ![image](images/figure5.PNG)
-<figcaption>Figure 5 - Screenshot of page width settings</figcaption>
+<figcaption>Screenshot of page width settings</figcaption>
 <br>
 
-#### Tablet / Mobile Designs
+## __Page Width and Height for use within NHS Digital webpages (Desktop, Tablet, Phone and App)__
 
-Details on tablet and mobile designs to be provided in a future revision of this document\.
+- Use "Fixed Size" on the Default view to ensure page looks the same across all devices\. This also has performance benefits vs "Automatic"\.
+- Width fixed to 1,220px, this allows users of the majority of popular screen sizes to see the full width of a dashboard without horizontal scrolling and accounts for the padding used on NHS Digital webpages
+- Use "Fit Width" on the Phone and Tablet views
+- Height is variable depending on your dashboard templates provided have a standard height of 1400px\. Note when you adjust the height the height of objects on the page may change so you will need to update these manually afterwards\.
 
 # ____6\. Charts____
 
 Charts are often used in dashboards to convey information to the user, it is important the colours are consistent across the dashboard as to not confuse the user\.
 
-#### Chart Colours
+## __Chart Colours__
 
 - Primary colour: Chart Blue 1 \(\#003087\)
 - Secondary/Highlight colour: NHS Orange \(\#ED8B00\)
@@ -203,21 +174,21 @@ Charts are often used in dashboards to convey information to the user, it is imp
 
   
 ![image](images/figure6.PNG)
-<figcaption>Figure 6 - Example charts with primary colour and highlight colour</figcaption>
+<figcaption>Example charts with primary colour and highlight colour</figcaption>
 <br>
 <br>
   
 ![image](images/figure7.PNG)
-<figcaption>Figure 7 - Example charts with additional colours</figcaption>
+<figcaption>Example charts with additional colours</figcaption>
 <br>
 <br>
 
   
 ![image](images/figure8.PNG)
-<figcaption>Figure 8 - Example of the background grey behind filters</figcaption>
+<figcaption>Example of the background grey behind filters</figcaption>
 <br>
 
-#### Chart Tooltips
+## __Chart Tooltips__
 
 Tooltips provide additional information to the user when they highlight areas of a chart
 
@@ -226,54 +197,66 @@ Tooltips provide additional information to the user when they highlight areas of
 - Metrics Colour: Black and Font Type: Bold
 
 ![image](images/figure9.PNG)
-<figcaption>Figure 9 - Example of tooltip</figcaption>
+<figcaption>Example of tooltip</figcaption>
 <br>
 
-#### Text Alignment
+## __Text Alignment__
 
 - Text alignment can be either side
 
 ![image](images/figure10.PNG)
-<figcaption>Figure 10 - Example of text alignment</figcaption>
+<figcaption>Example of text alignment</figcaption>
 <br>
 
-#### Chart Dividers
+## __Chart Dividers__
 
-Dividers between charts are an option to help separate charts\. Consider using white space
+Dividers between charts are used to help separate charts\. Consider using white space
+- 1px wide 
+- Colour: #d4d4d4
+- Use horizontal container to create dividers
+	- Outer padding 6 left, 6 right and 15 top
+	- Background colour: #d4d4d4
+- Within horizontal container use nested containers
+	- Outer padding 1px left (on right container)
+- Do not use "floating" lines to create dividers
+
+
+![image](images/figure10a.png)
+<figcaption>Example of text alignment</figcaption>
+<br>
 
 # ____7\. Maps____
 
 Similar to charts, using maps are useful to convey information to the user\. It is important the colours and labels of these maps are effectively used to ensure the user is not confused when using the map\.
 
-#### Map Colours
-
-- Primary colour: Chart Blue 1 \(\#003087\)
-- Secondary/Highlight colour: NHS Orange \(\#ED8B00\)
-- Use the "Custom Diverging" option, selecting "Use Full Colour Range" and forcing the start, centre, and end under the "Advanced Options" to maximise the impact of the colours on the map
+## __Map Colours__
+- Download the custom colour palette from Section 3 above
+- Use the "NHS Digital Maps Colour Palette Diverging" option, selecting "Stepped Colour", "Use Full Colour Range" and forcing the start, centre, and end under the "Advanced Options" to maximise the impact of the colours on the map
+- Refer to [here](https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/nhs-digital-style-guidelines/how-we-look/maps) for further details on NHS Digital map colour guidance
 
 ![image](images/figure11.PNG)
-<figcaption>Figure 11 - Example map colours with settings</figcaption>
+<figcaption>Example map colours with settings</figcaption>
 <br>
 
-#### Map Labels
+## __Map Labels__
 
 - Minimum font size 10
 - Font type: Standard for description
 - Font type: Bold for metric
 
 ![image](images/figure12.PNG)
-<figcaption>Figure 12 - Example Labels </figcaption>
+<figcaption>Example Labels </figcaption>
 <br>
 
-#### Filters and Reset Map
+## __Filters and Full Map__
 
 - Filters to be floating objects outside the frame of the map to ensure no data is covered by the filters
 - Filter headings to be Font Colour: Black and Font Type: Bold
-- Reset Map button to have white text and NHS Blue \(\#005EB8\) background
+- Full Map button to have white text and NHS Blue \(\#005EB8\) background
 
   
 ![image](images/figure13.PNG)
-<figcaption>Figure 13 - Example of filters and reset map</figcaption>
+<figcaption>Example of filters and reset map</figcaption>
 <br>
 
 # ____8\. Header Design____
@@ -281,10 +264,10 @@ Similar to charts, using maps are useful to convey information to the user\. It 
 The NHS Digital header is the common grounding between dashboards and is a familiar style for users when they access different dashboards across NHS Digital\.  
 
 ![image](images/figure14.PNG)
-<figcaption>Figure 14 - Example header</figcaption>
+<figcaption>Example header</figcaption>
 <br>
 
-#### NHS Logo
+## __NHS Logo__
 
 - Download from [here](https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/nhs-digital-style-guidelines/how-we-look/our-logo)
 - Left aligned
@@ -293,7 +276,7 @@ The NHS Digital header is the common grounding between dashboards and is a famil
 - Outer Padding: 6 from top only
 - No Inner Padding
 
-#### Title, Description and Latest Release
+## __Title, Description and Latest Release__
 
 - Height to match NHS Logo \(85px\)
 - One text box to contain all text
@@ -303,13 +286,14 @@ The NHS Digital header is the common grounding between dashboards and is a famil
 - Latest Release Size: 12, Type: Bold and standard, Colour Grey \(\#666666\) and Emergency Services Red \(\#DA291C\)
 - No Inner or Outer Padding
 
-#### Date Last Refreshed
+## __Date Last Refreshed__
 
 - One text box to contain all text
 - Aligned Right
 - Title Size: 12, Type: Standard, Colour Black
 - Date Size: 12, Type: Bold, Colour Black
-- No Inner or Outer Padding
+- No Inner Padding
+- 6px Outer Padding
 
 # ____9\. Buttons____
 
@@ -320,7 +304,7 @@ Button settings:
 - Text Size: 10, Colour: White, Font Type: Bold
 
 ![image](images/figure15.PNG)
-<figcaption>Figure 15 - Example Buttons</figcaption>
+<figcaption>Example Buttons</figcaption>
 <br>
   
 Horizontal container settings:
@@ -343,7 +327,7 @@ Table settings:
 - Increase spacing between rows by 2 sizes this can be done by selecting the table and pressing CTRL SHIFT B
 
 ![image](images/figure16.PNG)
-<figcaption>Figure 16 - Example of a Table</figcaption>
+<figcaption>Example of a Table</figcaption>
 <br>
 
 # ____11\. Filters____
@@ -358,35 +342,35 @@ Filter settings
 - Sliders must not be used for any filters as these are not easily used by those using accessibility readers
 
 ![image](images/figure17.PNG)
-<figcaption>Figure 17 - Example of Filter</figcaption>
+<figcaption>Example of Filter</figcaption>
 <br>
 
 # ____12\. Icons____
 
-__Information Icons__
+## __Information Icons__
 
 Information icons can be used to provide additional information to the user when they hover or click on the information icon\.
 
-- Download i\.png from [here\.](./files/i.png)
+- Download i\.png from [here\.](./files/Icons.zip)
 - Copy i\.png to the Shapes folder\. This can be found by going to File > Repository Location > Shapes\.
 - Create a sheet for each icon
 - Use dummy data to create an empty table
 - Click the "Shape" mark, select "More Shapes", select the folder you created in previous step and select the icon
 - Use Tooltip to provide the text which appears when you hover over the icon
 - Note these tooltips can be used to navigate user to other sheets in the dashboard
-- In the dashboard add sheet as a floating object and use the following dimensions for each use case: 
-	- Charts: Width 30, Height 30
+- In the dashboard add sheet into the relevant container and use the following dimensions for each use case: 
+	- Charts: Width 40, Height 40
 	- Date last refreshed: Width 40, Height 40
 
 ![image](images/figure18.PNG)
-<figcaption>Figure 18 - Chart title example with icon and tooltip</figcaption>
+<figcaption>Chart title example with icon and tooltip</figcaption>
 <br>
 
 ![image](images/figure19.PNG)
-<figcaption>Figure 19 - Date Last Refreshed Icon and Tooltip</figcaption>
+<figcaption>Date Last Refreshed Icon and Tooltip</figcaption>
 <br>
 
-__Right Arrow and Download Icons__
+## __Right Arrow and Download Icons__
 
 The right arrow icon and download Icon can be used as above or just as an image in a dashboard\. There are two colours available, Black and Blue\. Download the \.zip file [here](./files/Icons.zip)\.
 
@@ -395,140 +379,146 @@ The right arrow icon and download Icon can be used as above or just as an image 
 __Note:__ the following section applies only to Tableau, the exact measurements required in other applications such as Microsoft PowerBI may not match exactly the dimensions stated below\.   
 The provided templates are built upon containers which have the following dimensions\. These are important to follow as they have been calculated to ensure best readability and design of the dashboard\.
 
-#### NHS Digital Header
+## __NHS Digital Header__
 
 For the header padding refer to Section 8: Header Design above
 
-#### Headlines:
+## __Headlines:__
 
 Headlines should be sheets or text boxes within a horizontal container   
-Container settings:
+
+__Container settings:__
 
 - Background colour: \#f5f5f5
-- Outer Padding: 15 top only
+- Border colour: #e6e6e6
+- Border thickness: Smallest option
+- Outer Padding: 0 for all
 - Inner Padding: 0 for all\.
 
   
-Sheet / Text Box Settings
+__Sheet / Text Box Settings__
 
 - Background: White
+- Border colour: #e6e6e6
+- Border thickness: Smallest option
 - Height: 95px
 - Outer Padding 6 for all \(make zero for one side of each headline to avoid doubling up the grey spacing\)
 - Inner Padding 7 for all
 - Left Aligned
-- Title size: 12, Colour: \#666666, Text Type: Standard
+- Title size: 12, Colour: Black, Text Type: Standard
 - Headline number size: 20, Colour: NHS Blue \(\#005eb8\), Text Type: Bold
 - Sub headline size: 12, Colour Black with NHS Blue \(\#005EB8\) highlight, Text Type: Standard\. Be aware using green/red together may not be suitable for those who are colour blind\.
 
 ![image](images/figure19a.PNG)
 
-#### Filter Bar:
+## __Filter Bar:__
 
 The filter bar is built up using a vertical container with a text box and horizontal container stacked\. The text describes what the filters do\. The bottom horizontal container includes the filters and buttons\. 
 
 ![image](images/figure19b.PNG)
 
-Text settings:
-
+__Vertical container settings:__
+- Height 116px
 - Background colour: \#f5f5f5
-- Height 45px
-- Outer Padding: 15 top only
-- Inner Padding: 7 for left and top 0 for right and bottom\.
+- Outer Padding: 6 left, 15 top, 6 right, 6 bottom
+- Inner Padding: 0
+- Border colour: #e6e6e6
+- Border thickness: Smallest option
 
+__Text settings:__
+- Height 25px
+- Outer Padding: 0 for all
+- Inner Padding: 7 for left and top. 0 for right and bottom\.
   
-Filter settings:
-
+__Filter settings:__
 - Background: White
+- Border colour: #e6e6e6
+- Border thickness: Smallest option
 - Height 68px
 - Outer Padding 6 for all \(make zero for one side of each headline to avoid doubling up the grey spacing\)
 - Inner Padding 7 for all \(apart from 0 for bottom\)
 - Title size: 10, Colour: Black, Text Type: Bold
 
   
-Button settings:
+## __Button settings:__
 
 - Refer to Buttons sections\.
 
-#### Navigation Buttons:
+## __Navigation Buttons:__
 
-Horizontal containers are used for the home button and navigations buttons   
+Horizontal containers are used for the navigations buttons   
 
 ![image](images/figure19c.PNG)
 
-Horizontal Container settings:
+__Horizontal Container settings:__
 
 - Background colour: White
-- Outer Padding: 10 top only
+- Outer Padding: 10 top, 2 left, 2 right and 0 bottom
 - Inner Padding: 0 for all\.
 
-Home button settings
+__Navigation button settings__
 
-- Image downloaded from [here](./files/home.png)
-- Fit image, centre image
-- W = 60px, H = 68px
+- Height 50px
+- Outer padding: 4 for all
+- Other Pages 
+	- Background colour \(\#f5f5f5\)
+	- Border colour: #e6e6e6
+	- Border thickness: Smallest option
+- Highlight Page
+	- Background colour \(\#005eb8\)
+	- No border
 
-  
-Navigation button settings
+## ____Charts:____
 
-- Height 58px
-- White border \(largest option\)
-- No inner or outer padding
-- Background colour \(\#f5f5f5\) for other pages
-- Background colour \(\#005eb8\) for highlight page
-
-#### ____Charts:____
-
-Settings:
-
+__Settings:__
+- Ensure there is 6px of padding from the left and 15px of padding from the element above it
+	-  This can be built up either within the chart or the container it sits in
 - Background colour: White
-- Outer Padding: 4 for all
-- Inner Padding: 10 for top only
 - Refer to Charts section for colours and font sizes
 
 ![image](images/figure20.PNG)
 
-<figcaption>Figure 20 - Example Chart</figcaption>
+<figcaption>Example Chart</figcaption>
 <br>
 
-#### ____Maps:____
+## ____Maps:____
 
-Settings:
+__Settings:__
 
 - Background colour: White
-- Outer Padding: 4 for all
-- Inner Padding: 10 for top only
+- Outer Padding: 6 left, 15 top, 6 right, 6 bottom
+- No inner padding
 - Refer to Maps section for colours and font sizes
 
 ![image](images/figure21.PNG)
-<figcaption>Figure 21 - Example Map</figcaption>
+<figcaption>Example Map</figcaption>
 <br>
 
 #### ____Text Page:____
 
 Text on text pages should not run across the full length of the page as this can be difficult to read\. Split up the page into thirds and avoid text running across more than two thirds of the page\.
 
-Header settings
-
+__Header settings__
+- Create horizontal container 
+	- Container background colour: #d4d4d4
+- Place text boxes in vertical containers
+- Outerpadding of text box to be 1px from top (this creates the divider)
 - Font Size: 12
 - Font Type: Bold
-- Blank divider height 3px and colour \(\#e6e6e6\) to be used underneath headers
-
   
-Sub headers
+__Sub headers__
 
 - Font Size: 11
 - Font Type : Bold
 
   
-Text
+__Text__
 
 - Font Size: 11
 - Font Type: Standard
 
   
 ![image](images/figure22.PNG)
-
-<figcaption>Figure 22 - Example text page highlighting the rule of thirds</figcaption>
 
 # ____14\. Accessibility____
 
@@ -561,22 +551,32 @@ NHS Digital Chart Type Guide here:
 
 Below are examples of good practice designs:
 
-#### ____Bar Charts:____
+## ____Bar Charts:____
 
 ![image](images/figure22a.PNG)
 
-#### ____Gauge / Donut Charts:____
+## ____Gauge / Donut Charts:____
 
 Generally pie charts are not recommended, but used as the donut charts below can be very effective to give key information to the user\. In this case, they work well working as a gauge showing progression from 0 to 100%\.  
 
 ![image](images/figure22b.PNG)
 
-#### ____Line Charts:____
+## ____Line Charts:____
 
 ![image](images/figure22c.PNG)
 
-#### ____Tables:____
+## ____Tables:____
 
 Where detail is required that a visualisation cannot provide tables can be used effectively\. It also gives the user the option to download data\.   
 
 ![image](images/figure22d.PNG)
+
+# ____16\. Summary Key Links____
+
+- [Online Demo of Templates](https://public.dashboards.data.digital.nhs.uk/#/views/NHSD_Templates_Complete/1_NavButtons)
+- [Populated Template Download](./files/NHSD_Templates_Complete_v12.twbx)
+- [Empty Template Download](./files/NHSD_Templates_Empty_v12.twbx)
+- [Custom Colour Palette "Preferences.tps" file](./files/Preferences.tps)
+- [Icons](./files/Icons.zip)
+- [NHS Digital Logo](https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/nhs-digital-style-guidelines/how-we-look/our-logo)
+- [NHS Digital Style Guidance](https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/nhs-digital-style-guidelines)
